@@ -1,0 +1,42 @@
+* {
+    font-family: 'PT Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+article {
+    height: 100vh;
+}
+nav {
+    height: 10vh;
+}
+.navbar{
+    padding: 0px !important;
+}
+.navbar-brand{
+    margin-top: 1vh;
+    margin-left: 5vh;
+}
+.navbar-toggler{
+    margin-top: 1vh;
+    margin-right: 5vh;
+}
+.navbar-collapse{
+    background-color: white;
+    width: 100%;
+}
+.navbar-nav li{
+    padding: 2vh !important;
+}
+.navbar-nav li:hover{
+    transition: 0.5s;
+    border-bottom: 0.5vh solid black;
+}
+/* NAVBAR */
+
+
+#global_cases{
+    position: relative;
+    background-color: black;
+}

@@ -4,7 +4,8 @@
   "description": "Web Berisi Update Informasi Tentang Corona",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack.prod.js",
+    "start-dev": "webpack-dev-server --config webpack.dev.js --open"
   },
   "author": "dafa27890@gmail.com",
   "license": "ISC",
@@ -20,5 +21,10 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3",
     "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1"
   }
 }
