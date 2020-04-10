@@ -1,6 +1,9 @@
 * {
     font-family: 'PT Sans', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 a {
     text-decoration: none;
     color: #000000;
@@ -39,4 +42,38 @@ nav {
 #global_cases{
     position: relative;
     background-color: black;
+    color: white;
+}
+#global_cases h1{
+    margin-top: 5vh;
+    font-size: 10vh;
+}
+#global_cases h2{
+    margin-top: 5vh;
+    font-size: 8vh;
+}
+.death{
+    color : red ;
+}
+.recovered{
+    color : green ;
+}
+#global_cases p{
+    font-size: 5vh;
+}
+#global_cases > div{
+    border: 1vh solid white;
+}
+
+@media screen and (max-width:1300px){
+    #global_cases h1{
+        font-size: 8vh;
+    }
+    #global_cases h2{
+        font-size: 6vh;
+    }
+    #global_cases p{
+        font-size: 3vh;
+    }
+    
 }
