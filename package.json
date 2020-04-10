@@ -1,0 +1,11 @@
+{
+  "name": "web_corona",
+  "version": "1.0.0",
+  "description": "Web Berisi Update Informasi Tentang Corona",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dafa27890@gmail.com",
+  "license": "ISC"
+}
