@@ -38,7 +38,7 @@ nav {
 }
 /* NAVBAR */
 
-
+/* GLOBAL CASES */
 #global_cases{
     position: relative;
     background-color: black;
@@ -64,7 +64,28 @@ nav {
 #global_cases > div{
     border: 1vh solid white;
 }
+/* GLOBAL CASES */
 
+/* CASES PER COUNTRY */
+#cases_per_country{
+    padding-top: 10vh;
+}
+#cases_per_country > div {
+    margin-top: 10vh;
+    margin-bottom: 0px ;
+}
+.countrysearch{
+    outline: none;
+    height: 7vh;
+}
+.countrylist{
+    height: 60vh;
+    overflow-y: scroll;
+
+}
+.card {
+    margin: 1vh;
+}
 @media screen and (max-width:1300px){
     #global_cases h1{
         font-size: 8vh;
