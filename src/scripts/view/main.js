@@ -1,8 +1,11 @@
 import '../components/app-bar.js';
+import '../components/about-me.js';
 import '../components/global-cases.js';
+import '../components/data-source.js';
 import DataSource from '../data/data-source.js';
  
 const main = () => {
+
     const globalcases = document.querySelector("global-cases");
     const countrylist = document.querySelector("#country-list");
 
@@ -36,7 +39,7 @@ const fallbackResult = message => {
 };
 
 const getCountryAffected = () => {
-    fetch(`https://coronavirus-monitor.p.rapidapi.com/coronavirus/affected.php`, {
+    fetch(`https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_country.php`, {
         method: "GET",
         headers: {
                "x-rapidapi-host": "coronavirus-monitor.p.rapidapi.com",
@@ -47,7 +50,7 @@ const getCountryAffected = () => {
         return response.json();
     })
     .then(responseJson => {
-        renderCountryAffected(responseJson.affected_countries);
+        renderCountryAffected(responseJson.countries_stat);
     })
     .catch(error => {
          alert(error);
@@ -55,8 +58,9 @@ const getCountryAffected = () => {
 };
 
 
+
 const renderCountryAffected = (results) => {
-    countrylist.innerHTML = "";
+    countrylist.innerHTML = ""; 
 
     results.forEach((result,index) => 
     {
@@ -64,7 +68,8 @@ const renderCountryAffected = (results) => {
             countrylist.innerHTML += `
             <div class="card col-xl-2 col-md-3 col-sm-5 col-5 shadow-sm"  >
                     <div class="card-body">
-                    <h5 class="card-title"><b>${result}</b></h5>
+                    <h5 class="card-title"><b>${result.country_name}</b></h5>
+                    <p>${result.cases} Cases</p>
                     </div>
                 </div>
             `;

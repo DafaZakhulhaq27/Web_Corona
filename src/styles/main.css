@@ -6,7 +6,6 @@ html{
 }
 a {
     text-decoration: none;
-    color: #000000;
 }
 article {
     height: 100vh;
@@ -36,6 +35,7 @@ nav {
     transition: 0.5s;
     border-bottom: 0.5vh solid black;
 }
+
 /* NAVBAR */
 
 /* GLOBAL CASES */
@@ -85,6 +85,34 @@ nav {
 }
 .card {
     margin: 1vh;
+}
+
+/* DATA SOURCE */
+#data_source{
+    padding-top: 10vh;
+}
+#data_source > div {
+    margin-top: 10vh;
+}
+#link_data_source {
+    margin-top: 20vh;
+}
+
+/* About Me */
+#about_me{
+    padding-top: 10vh;
+}
+#data_source > div {
+    margin-top: 10vh;
+}
+
+/* Footer */
+footer{
+    color : white ;
+    height: 15vh;
+}
+footer p{
+    padding-top: 5vh;
 }
 @media screen and (max-width:1300px){
     #global_cases h1{

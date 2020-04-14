@@ -20,9 +20,15 @@ class AppBar extends HTMLElement {
                 <li class="nav-item active">
                   <a class="nav-link" href="#global_cases">Global Cases <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                   <a class="nav-link" href="#cases_per_country">Cases per Country</a>
                 </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#data_source">Data Source</a>
+                </li>         
+                <li class="nav-item active">
+                  <a class="nav-link" href="#about_me">About Me</a>
+                </li>                           
               </ul>
             </div>
           </nav>`;
