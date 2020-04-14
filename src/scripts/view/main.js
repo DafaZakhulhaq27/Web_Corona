@@ -68,7 +68,7 @@ const renderCountryAffected = (results) => {
             countrylist.innerHTML += `
             <div class="card col-xl-2 col-md-3 col-sm-5 col-5 shadow-sm"  >
                     <div class="card-body">
-                    <h5 class="card-title"><b>${result.country_name}</b></h5>
+                    <h5 class="card-title"><b>Rank ${index}. ${result.country_name}</b></h5>
                     <p>${result.cases} Cases</p>
                     </div>
                 </div>
