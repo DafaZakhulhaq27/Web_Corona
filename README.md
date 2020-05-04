@@ -20,10 +20,10 @@ npm install
 ```
 npm run start-dev
 ```
-3. bulid app
+3. build app
 
 ```
-npm run sbuild
+npm run build
 ```
 
 ## Built With
